@@ -16,8 +16,8 @@
 .title-letter {
     font-size: calc(8vw + 1rem);
     margin-left: -2px;
-    color: #1d1751;
-    text-shadow: -0.5px 0.5px rgb(255 255 255 / 10%);
+    color: #4f479a;
+    text-shadow: 0.75px 0.75px rgb(0 0 0 / 40%);
 }
 
 #sub-title {
@@ -56,6 +56,7 @@
 }
 .hammer{
     padding-top: 5rem !important;
+
 }
 .nifty_text{
     padding-bottom:15rem;
@@ -63,6 +64,7 @@
 .art_design{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    font-size: 44px;
 }
 blockquote {
     font-family: Georgia, serif;
@@ -89,13 +91,29 @@ blockquote {
     }
 
     .grad_background{
-        
-            background: linear-gradient(-45deg, rgba(29, 23, 81, 1), rgba(5, 2, 20, 1),rgba(29, 23, 81, 1)),radial-gradient(circle at bottom right,rgba(93, 22, 116, .51),rgba(47, 0, 71, .51)),radial-gradient(circle at top left,rgba(93, 22, 116, .51),rgba(47, 0, 71, .51));
-   
-            height: 450px;
-           
+            /* background: linear-gradient(-45deg, rgba(29, 23, 81, 1), rgba(5, 2, 20, 1),rgba(29, 23, 81, 1)),radial-gradient(circle at bottom right,rgba(93, 22, 116, .51),rgba(47, 0, 71, .51)),radial-gradient(circle at top left,rgba(93, 22, 116, .51),rgba(47, 0, 71, .51)); */
+
+            background: url("../assets/bkg-1.png") no-repeat center bottom, linear-gradient(to bottom, #120E27,#4B3A8E,#2C326F,#507BEA);
+            height: 60rem;
         }
         
+        @media (min-width: 768px) {
+            .grad_background {
+                height: 35rem;
+            }
+          }    
+          
+    .grad_background_2{
+            background: url("../assets/bkg-2.png") no-repeat center bottom, url("../assets/bg-dots.png"),url("../assets/bkg-2.png") no-repeat center bottom;
+            /* height: 60rem; */
+        }
+        
+        @media (min-width: 768px) {
+            .grad_background_2 {
+                /* height: 35rem; */
+            }
+          }    
+          
         @keyframes gradient {
             0% {
                 background-position: 0% 50%;
@@ -113,18 +131,82 @@ blockquote {
 
         }
         .card{    
-        background: rgba(255, 255, 255, .5);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 1);
-                
-        background: rgba(215, 152, 249, 0.3);
-        box-shadow: inset 0px 3.00856px 6.01712px rgba(255, 255, 255, 0.4), inset 0px -3.00856px 9.02569px rgba(255, 255, 255, 0.5), inset 0px -1.50428px 20.0571px rgba(255, 255, 255, 0.24), inset 0px 20.0571px 20.0571px rgba(255, 255, 255, 0.24), inset 0px 1.00285px 20.5585px rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(20.0571px);
-            
-        background: rgba(255, 255, 255, 0.13);
-        box-shadow: inset 0px 3.00856px 6.01712px rgba(255, 255, 255, 0.4), inset 0px -3.00856px 9.02569px rgba(255, 255, 255, 0.5), inset 0px -1.50428px 20.0571px rgba(255, 255, 255, 0.24), inset 0px 20.0571px 20.0571px rgba(255, 255, 255, 0.24), inset 0px 1.00285px 20.5585px rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(20.0571px);
+            background: rgba(255, 255, 255, .1);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 1); 
+            /* background: rgba(215, 152, 249, 0.3); */
+            box-shadow: inset 0px 3.00856px 6.01712px rgba(255, 255, 255, 0.4), inset 0px -3.00856px 9.02569px rgba(255, 255, 255, 0.5), inset 0px -1.50428px 20.0571px rgba(255, 255, 255, 0.24), inset 0px 20.0571px 20.0571px rgba(255, 255, 255, 0.02), inset 0px 1.00285px 20.5585px rgba(255, 255, 255, 0.08);
+            box-shadow: inset 0px 3.00856px 6.01712px rgb(255 255 255 / 4%), inset 0px -3.00856px 9.02569px rgb(255 255 255 / 5%), inset 0px -1.50428px 20.0571px rgb(255 255 255 / 2%), inset 0px 20.0571px 20.0571px rgb(255 255 255 / 2%), inset 0px 1.00285px 20.5585px rgb(255 255 255 / 8%), 1px 1px 12px rgb(0 0 0 / 25%);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem;
+            transition:transform .5s;
+    }
+    .card:hover{  
+        transform:scale(1.05);
+        transition: transform .5s;
+    }
+    .card2{
+        box-shadow: inset 0px 3.00856px 6.01712px rgb(255 255 255 / 4%), inset 0px -3.00856px 9.02569px rgb(255 255 255 / 5%), inset 0px -1.50428px 20.0571px rgb(255 255 255 / 2%), inset 0px 20.0571px 20.0571px rgb(255 255 255 / 2%), inset 0px 1.00285px 20.5585px rgb(255 255 255 / 8%), 1px 1px 12px rgb(0 0 0 / 25%);
+    }
+    .portfolio_title{
+        margin-top: 3rem;
+        padding-top: 2rem;
+        /* padding-bottom: 1rem; */
+        color:rgba(255,255,255,1);
+        font-family: 'Roboto',sans;
+        font-size: 3rem;
+        font-weight:600;
+    }
+    .portfolio_subtitle{
+        margin: 0 0 3.5rem 0;
+        padding: 0 0 1.5rem 0;
+        color: rgba(215, 152, 249, 01);
+        /* text-shadow: 1px 1px 1px rgba(255, 255, 255,.51); */
+    }
+
+    .portfolio_title2{
+        margin-top: 3rem;
+        padding-top: 2rem;
+        /* padding-bottom: 1rem; */
+        color: #383838;
+        font-family: 'Roboto',sans;
+        font-size: 3rem;
+        font-weight:600;
+    }
+    .portfolio_subtitle2{
+        margin: 0 0 3.5rem 0;
+        padding: 0 0 1.5rem 0;
+        color: rgba(215, 152, 249, 01);
+        color: #7a7a7a;
+        /* text-shadow: 1px 1px 1px rgba(255, 255, 255,.51); */
+    }
+    .text-center.text-white.copy{
+        color: #474646!important;
+    }
+    .card-title {
+        margin-top: .75rem;
+        color: rgba(255,255,255,1);
+    }
+    .card-subtitle{
+        color: rgba(215, 152, 249, 01);
+    }
+    .static_site_link{
+        text-decoration: none;
+    }
+    .row1,.row2{
+        padding-bottom: 4rem;
+        /* margin-bottom: 1rem; */
+    }
+    .row1{
+
+    }
+    .card-title2{
+        color:#120E27;
+        text-shadow: 1px 1px 3px rgb(255 255 255 / 45%);
     }
